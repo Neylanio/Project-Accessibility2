@@ -1,0 +1,10 @@
+codigo-cnes = bands.features[0].properties[1].co_cnes
+nome-fantasia = bands.features[0].properties[4].no_fantasia
+logradouro = bands.features[0].properties[5].no_logradouro
+endereco = bands.features[0].properties[6].nu_endereco
+bairro = bands.features[0].properties[7].no_bairro
+telefone = bands.features[0].properties[8].nu_telefone
+cep = bands.features[0].properties[9].co_cep
+uf = bands.features[0].properties[10].uf
+cidade = bands.features[0].properties[11].cidade
+

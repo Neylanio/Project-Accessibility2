@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+#tela{
+    width: 100%;
+    display: flex;
+}
+
+table{
+    align-items: center;
+    width: 500px;
+}
+
+table thead{
+    font-size: 12pt;
+}
+
+table tbody{
+    font-size: 10pt;
+}
