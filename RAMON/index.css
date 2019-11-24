@@ -1,0 +1,15 @@
+#tela{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+}
+
+table thead{
+    font-size: 12pt;
+}
+
+table tbody{
+    font-size: 10pt;
+}
