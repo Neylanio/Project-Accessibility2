@@ -32,15 +32,15 @@ function search(uf) {
     // for (let i = 0; i < bands.length; i++) {
     for (let i = 0; i < 20; i++) {
         saida += '<tr>';
-        saida += '<td>'+ bands[i].properties[1].co_cnes +'</td>';
-        saida += '<td>'+ bands[i].properties[4].no_fantasia +'</td>';
-        saida += '<td>'+ bands[i].properties[5].no_logradouro +'</td>';
-        saida += '<td>'+ bands[i].properties[6].nu_endereco +'</td>';
-        saida += '<td>'+ bands[i].properties[7].no_bairro +'</td>';
-        saida += '<td>'+ bands[i].properties[8].nu_telefone +'</td>';
-        saida += '<td>'+ bands[i].properties[9].co_cep +'</td>';
-        saida += '<td>'+ bands[i].properties[10].uf +'</td>';
-        saida += '<td>'+ bands[i].properties[11].cidade +'</td>';
+        saida += '<td title='+ bands[i].properties[1].co_cnes +'>'+ bands[i].properties[1].co_cnes +'</td>';
+        saida += '<td title='+ bands[i].properties[4].no_fantasia +'>'+  bands[i].properties[4].no_fantasia +'</td>';
+        saida += '<td title='+ bands[i].properties[5].no_logradouro +'>'+ bands[i].properties[5].no_logradouro +'</td>';
+        saida += '<td title='+ bands[i].properties[6].nu_endereco +'>'+ bands[i].properties[6].nu_endereco +'</td>';
+        saida += '<td title='+ bands[i].properties[7].no_bairro +'>'+ bands[i].properties[7].no_bairro +'</td>';
+        saida += '<td title='+ bands[i].properties[8].nu_telefone +'>'+ bands[i].properties[8].nu_telefone +'</td>';
+        saida += '<td title='+ bands[i].properties[9].co_cep +'>'+ bands[i].properties[9].co_cep +'</td>';
+        saida += '<td title='+ bands[i].properties[10].uf +'>'+ bands[i].properties[10].uf +'</td>';
+        saida += '<td title='+ bands[i].properties[11].cidade +'>'+ bands[i].properties[11].cidade +'</td>';
         saida += '</td>';
         saida += '</tr>';
       }

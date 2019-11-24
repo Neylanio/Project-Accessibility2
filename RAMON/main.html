@@ -35,7 +35,9 @@
     <script defer="defer" src="http://www.portalpadrao.gov.br/++resource++brasil.gov.portal/brasilgovportal-f357bf7.js"></script>
     <link rel="stylesheet" href="http://www.portalpadrao.gov.br/++resource++brasil.gov.tiles/brasilgovtiles-fadba58.css" />
     <script defer="defer" src="http://www.portalpadrao.gov.br/++resource++brasil.gov.tiles/brasilgovtiles-fadba58.js"></script>
-    <title>Noticias</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>UBS</title>
     <link rel="http://purl.org/dc/terms/subject http://schema.org/about http://xmlns.com/foaf/0.1/primaryTopic" href="http://vocab.e.gov.br/2011/03/vcge#esquema" />
 
     <link rel="author" href="http://www.portalpadrao.gov.br/author/djunqueira" title="Informações do Autor" />
@@ -46,7 +48,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="index.css">
 
     <meta name="generator" content="Plone - http://plone.org" />
 
@@ -67,19 +69,16 @@
 </head>
 
 <body class="default-header-template cover-layout-destaques template-view portaltype-collective-cover-content site-IDG section-estilos-de-capa subsection-capa-2 subsection-capa-2-capa-padrao-2 userrole-anonymous" dir="ltr">
-    <div id="barra-identidade">
+    <div id="topo">
         <div id="barra-brasil">
             <ul id="menu-barra-temp">
-                <li id="menu-barra-temp-li"><a href="http://brasil.gov.br">Portal do Governo Brasileiro</a></li>
+                <li id="menu-barra-temp-li"><a href="http://brasil.gov.br" title="Link de redirecionamento para Portal do Gooverno Brasileiro">Portal do Governo Brasileiro</a></li>
                 <li><a id="tagA-LI" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
             </ul>
         </div>
     </div>
     <ul id="skip-menu">
-        <li><a accesskey="1" href="#content">Ir para o conteúdo</a></li>
-        <li><a accesskey="2" href="#main-navigation">Ir para o menu</a></li>
-        <li><a accesskey="3" href="#portal-searchbox">Ir para a busca</a></li>
-        <li><a accesskey="4" href="#portal-footer">Ir para o rodapé</a></li>
+        <li><a accesskey="1" href="#portal-footer">Ir para o footer</a></li>
     </ul>
     <!-- User -->
     <!-- Header -->
@@ -117,14 +116,12 @@
                 <ul id="portal-services">
 
                     <li id="portal-services-link-2-1532035932">
-                        <a href="main.html" title="Link para página de Notícias">Notícias</a>
-
+                        <a href="main.html" title="Link para página de UBS">UBS</a>
                     </li>
 
-                    <li id="portal-services-assunto-1-1535397361">
-                        <a href="UBS.html" title="Link para página contendo informações sobre UBS">UBS</a>
+                    <li id="portal-services-link-2-1532035932">
+                        <a href="def.html" title="Link para página de Noticias">Noticias</a>
                     </li>
-
                 </ul>
             </div>
 
@@ -176,6 +173,7 @@
                                     Capa 4
                                 </a>
                                 </li>
+                                <span class="endoflist">(Fim de estilos de capa)</span>
                             </ul>
                         </li>
                         <li id="portaltab-assuntos" class="plain"><a href="http://www.portalpadrao.gov.br/assuntos" title="" class="plain">Assuntos</a>
@@ -373,19 +371,11 @@
                         <ul class="portal-redes">
 
                             <li class="portalredes-twitter portalredes-item">
-                                <a href="https://www.twitter.com/twitter">Twitter</a>
+                                <a href="https://www.twitter.com/twitter" title="link para redirecionar ao twitter">Twitter</a>
                             </li>
 
                             <li class="portalredes-youtube portalredes-item">
-                                <a href="https://www.youtube.com/youtube">YouTube</a>
-                            </li>
-
-                            <li class="portalredes-facebook portalredes-item">
-                                <a href="https://www.facebook.com/facebook">Facebook</a>
-                            </li>
-
-                            <li class="portalredes-flickr portalredes-item">
-                                <a href="https://www.flickr.com/flickr">Flickr</a>
+                                <a href="https://www.youtube.com/youtube" title="link para redirecionar ao youtube">YouTube</a>
                             </li>
 
                         </ul>
@@ -398,7 +388,7 @@
     <div id="portal-breadcrumbs">
         <span id="breadcrumbs-you-are-here">Você está aqui:</span>
         <span id="breadcrumbs-home">
-        <a href="main.html">Página Inicial</a>
+        <a href="main.html" title="Link para página inicial">Página Inicial</a>
         <span class="breadcrumbSeparator">
             &gt;
 
@@ -406,11 +396,19 @@
         </span>
         <span dir="ltr" id="breadcrumbs-1">
 
-            <a href="main.html">Notícias</a>
+            <a href="main.html" title="Link para pagina de UBS">UBS</a>
 
         </span>
 
     </div>
+
+    <ul id="skip-menu">
+            <li><a accesskey="1" href="#content">Ir para o conteúdo</a></li>
+            <li><a accesskey="2" href="#main-navigation">Ir para o menu</a></li>
+            <li><a accesskey="3" href="#portal-searchbox">Ir para a busca</a></li>
+            <li><a accesskey="4" href="#portal-footer">Ir para o rodapé</a></li>
+          </ul><!-- User --><!-- Header --><header id="main-header" class="inverter">
+
     <div id="wrapper">
 
         <!-- Columns -->
@@ -435,9 +433,49 @@
                     <div id="content">
 
                         <div class="row">
+                            <p id="usandoLang">Para selecionar a opção de menu, basta clicar com o <span lang="en">mouse</span> ou usar a tecla TAB</p>  
+                            <div id="app">
 
+                                <button class="btn btn-secondary" onclick="search('AC')" title="Botão para filtrar dados somente do estado do ACRE">ACRE</button>
+                                <button class="btn btn-light" onclick="search('AL')" title="Botão para filtrar dados somente do estado do ALAGOAS">ALAGOAS</button>
+                                <button class="btn btn-secondary" onclick="search('AM')" title="Botão para filtrar dados somente do estado do AMAZONAS">AMAZONAS</button>
+                                <button class="btn btn-light" onclick="search('AP')" title="Botão para filtrar dados somente do estado do AMAPÁ">AMAPÁ</button>
+                                <button class="btn btn-secondary" onclick="search('BA')" title="Botão para filtrar dados somente do estado do BAHIA">BAHIA</button>
+                                <button class="btn btn-light" onclick="search('CE')" title="Botão para filtrar dados somente do estado do CEARÁ">CEARÁ</button>
+                                <button class="btn btn-secondary" onclick="search('DF')" title="Botão para filtrar dados somente do estado do DISTRITO FEDERAL">DISTRITO FEDERAL</button>
+                                <button class="btn btn-light" onclick="search('ES')" title="Botão para filtrar dados somente do estado do ESPIRITO SANTO">ESPIRITO SANTO</button>
+                                <button class="btn btn-secondary" onclick="search('GO')" title="Botão para filtrar dados somente do estado do GOIÁS">GOIÁS</button>
+                                <button class="btn btn-light" onclick="search('MA')" title="Botão para filtrar dados somente do estado do MARANHÃO">MARANHÃO</button>
+                                <button class="btn btn-secondary" onclick="search('MG')" title="Botão para filtrar dados somente do estado do MINAS GERAIS">MINAS GERAIS</button>
+                                <button class="btn btn-light" onclick="search('MS')" title="Botão para filtrar dados somente do estado do MATO-GROSSO DO SUL">MATO-GROSSO DO SUL</button>
+                                <button class="btn btn-secondary" onclick="search('MT')" title="Botão para filtrar dados somente do estado do MATO-GROSSO">MATO-GROSSO</button>
+                                <button class="btn btn-light" onclick="search('PA')" title="Botão para filtrar dados somente do estado do PARÁ">PARÁ</button>
+                                <button class="btn btn-secondary" onclick="search('PB')" title="Botão para filtrar dados somente do estado do PARAÍBA">PARAÍBA</button>
+                                <button class="btn btn-light" onclick="search('PE')" title="Botão para filtrar dados somente do estado do PERNAMBUCO">PERNAMBUCO</button>
+                                <button class="btn btn-secondary" onclick="search('PI')" title="Botão para filtrar dados somente do estado do PIAUÍ">PIAUÍ</button>
+                                <button class="btn btn-light" onclick="search('PR')" title="Botão para filtrar dados somente do estado do PARANÁ">PARANÁ</button>
+                                <button class="btn btn-secondary" onclick="search('RJ')" title="Botão para filtrar dados somente do estado do RIO DE JANEIRO">RIO DE JANEIRO</button>
+                                <button class="btn btn-light" onclick="search('RN')" title="Botão para filtrar dados somente do estado do RIO GRANDE DO NORTE">RIO GRANDE DO NORTE</button>
+                                <button class="btn btn-secondary" onclick="search('RO')" title="Botão para filtrar dados somente do estado do RONDÔNIA">RONDÔNIA</button>
+                                <button class="btn btn-light" onclick="search('RR')" title="Botão para filtrar dados somente do estado do RORAIMA">RORAIMA</button>
+                                <button class="btn btn-secondary" onclick="search('RS')" title="Botão para filtrar dados somente do estado do RIO GRANDE DO SUL">RIO GRANDE DO SUL</button>
+                                <button class="btn btn-light" onclick="search('SC')" title="Botão para filtrar dados somente do estado do SANTA CATARINA">SANTA CATARINA</button>
+                                <button class="btn btn-secondary" onclick="search('SE')" title="Botão para filtrar dados somente do estado do SERGIPE">SERGIPE</button>
+                                <button class="btn btn-light" onclick="search('SP')" title="Botão para filtrar dados somente do estado do SÃO PAULO">SÃO PAULO</button>
+                                <button class="btn btn-secondary" onclick="search('TO')" title="Botão para filtrar dados somente do estado do TOCANTINS">TOCANTINS</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            
                             <div class="column col-md-12 " data-panel="">
                                 
+                                    <div id="tela">
+                                  
+                                    </div>
+
                             </div>
 
                         </div>
@@ -461,6 +499,7 @@
         </div>
         <div class="conteudo-relacionado"></div>
 
+        <div id="footer">
         <footer id="portal-footer">
             <div class="footer-wrapper">
 
@@ -470,30 +509,35 @@
                         <ul class="portal-redes">
 
                             <li class="portalredes-twitter portalredes-item">
-                                <a href="https://www.twitter.com/twitter">Twitter</a>
+                                <a href="https://www.twitter.com/twitter" title="Link para redirecionar ao Twitter">Twitter</a>
                             </li>
 
                             <li class="portalredes-youtube portalredes-item">
-                                <a href="https://www.youtube.com/youtube">YouTube</a>
+                                <a href="https://www.youtube.com/youtube" title="Link para redirecionar ao Youtube">YouTube</a>
                             </li>
 
                             <li class="portalredes-facebook portalredes-item">
-                                <a href="https://www.facebook.com/facebook">Facebook</a>
+                                <a href="https://www.facebook.com/facebook" title="Link para redirecionar ao Facebook">Facebook</a>
                             </li>
 
-                            <li class="portalredes-flickr portalredes-item">
-                                <a href="https://www.flickr.com/flickr">Flickr</a>
+                            </li>
+                            <li class="portalredes-item">
+                                <figure>
+                                    <img src="https://logodownload.org/wp-content/uploads/2019/01/governo-federal-2019-bolsonaro-logo-2.png"
+                                            alt="Imagem do governo federal intitulada pátria amada">
+                                    <figcaption>Patria Amada Brasil</figcaption>
+                                </figure>
                             </li>
 
                         </ul>
                     </div>
                     <div class="coluna-menu">
                         <ul class="rodape-navigation">
-                            <li id="portaltab-estilos-de-capa" class="selected"><a href="http://www.portalpadrao.gov.br/estilos-de-capa" title="" class="plain">Estilos de capa</a>
+                            <li id="portaltab-estilos-de-capa" class="selected"><a href="http://www.portalpadrao.gov.br/estilos-de-capa" title="Listagem de Estilos de capa" class="plain">Listagem de Estilos de capa</a>
                                 <ul class="submenu">
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-1" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-1" title="Link para Capa1" class="state-published">
 
                                             Capa 1
                                         </a>
@@ -502,7 +546,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-2" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-2" title="Link para Capa2" class="state-published">
 
                                             Capa 2
                                         </a>
@@ -511,7 +555,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-3" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-3" title="Link para Capa2" class="state-published">
 
                                             Capa 3
                                         </a>
@@ -520,7 +564,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-4" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-4" title="Link para Capa4" class="state-published">
 
                                         Capa 4
                                     </a>
@@ -528,11 +572,11 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li id="portaltab-assuntos" class="plain"><a href="http://www.portalpadrao.gov.br/assuntos" title="" class="plain">Assuntos</a>
+                            <li id="portaltab-assuntos" class="plain"><a href="http://www.portalpadrao.gov.br/assuntos" title="Link para pagina de Assuntos" class="plain">Assuntos</a>
                                 <ul class="submenu">
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-1" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-1" title="Link para pagina de Assuntos1" class="state-published">
 
                                             Assunto 1
                                         </a>
@@ -541,7 +585,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-2" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-2" title="Link para pagina de Assuntos2" class="state-published">
 
                                             Assunto 2
                                         </a>
@@ -550,7 +594,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-3" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-3" title="Link para pagina de Assuntos3" class="state-published">
 
                                             Assunto 3
                                         </a>
@@ -559,7 +603,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-4" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-4" title="Link para pagina de Assuntos4" class="state-published">
 
                                             Assunto 4
                                         </a>
@@ -568,7 +612,7 @@
 
                                     <li>
 
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/estilos" title="" class="state-published">
+                                        <a href="http://www.portalpadrao.gov.br/assuntos/estilos" title="Link para pagina de Estilos" class="state-published">
 
                                             Estilos
                                         </a>
@@ -576,7 +620,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li id="portaltab-informacao-ao-cidadao" class="plain"><a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao" title="" class="plain">Informação ao Cidadão</a>
+                            <li id="portaltab-informacao-ao-cidadao" class="plain"><a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao" title="Link para pagina de Informação ao cidadão" class="plain">Informação ao Cidadão</a>
                                 <ul class="submenu">
                                     <li>
 
@@ -767,6 +811,7 @@
             </div>
             <div id="footer-brasil"></div>
         </footer>
+    </div>
 
     </div>
 
@@ -777,6 +822,7 @@
     <script src="main.js"></script>    
     <script src="anotherMain.js"></script>
     <script src="another2Main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
